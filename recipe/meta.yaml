@@ -1,5 +1,5 @@
 {% set name = "perfplot" %}
-{% set version = "0.9.6" %}
+{% set version = "0.9.8" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/perfplot-{{ version }}.tar.gz
-  sha256: c86a6f15548efefeadea0526e85d991b317583f24eb222c52a16c0ef3b4d5a23
+  sha256: 5781add5e6829509c2d1288150a46908fe33ffbec0e395b7a09191e65ee18819
 
 build:
   number: 0
