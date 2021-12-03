@@ -26,6 +26,7 @@ requirements:
     - numpy
     - python >=3.6
     - rich
+    - matplotx
 
 test:
   imports:
