@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - flit-core
   run:
     - dufte >=0.2.20
     - importlib-metadata
