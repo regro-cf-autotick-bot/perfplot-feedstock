@@ -20,10 +20,11 @@ requirements:
     - pip
     - python >=3.6
     - flit-core
+    - matplotlib-base
   run:
     - dufte >=0.2.20
     - importlib-metadata
-    - matplotlib
+    - matplotlib-base
     - numpy
     - python >=3.6
     - rich
