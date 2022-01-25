@@ -22,14 +22,14 @@ requirements:
     - flit-core
     - matplotlib-base
     - matplotx
-    - numpy
+    - numpy >=1.20
     - python
     - rich
     - typing_extensions
   run:
     - matplotlib-base
     - matplotx
-    - numpy
+    - numpy >=1.20
     - python >=3.7
     - rich
     - typing_extensions
