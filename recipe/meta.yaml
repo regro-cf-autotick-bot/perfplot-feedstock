@@ -20,21 +20,19 @@ requirements:
     - pip
     - python >=3.6
     - flit-core
-    - dufte >=0.2.20
-    - importlib-metadata
     - matplotlib-base
+    - matplotx
     - numpy
-    - python >=3.6
+    - python
     - rich
-    - matplotx >=0.2.8
+    - typing_extensions
   run:
-    - dufte >=0.2.20
-    - importlib-metadata
     - matplotlib-base
+    - matplotx
     - numpy
-    - python >=3.6
+    - python
     - rich
-    - matplotx >=0.2.8
+    - typing_extensions
 
 test:
   imports:
