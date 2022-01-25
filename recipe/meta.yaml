@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - flit-core
     - matplotlib-base
     - matplotx
@@ -30,7 +30,7 @@ requirements:
     - matplotlib-base
     - matplotx
     - numpy
-    - python
+    - python >=3.7
     - rich
     - typing_extensions
 
