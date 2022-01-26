@@ -1,5 +1,5 @@
 {% set name = "perfplot" %}
-{% set version = "0.9.15" %}
+{% set version = "0.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/perfplot-{{ version }}.tar.gz
-  sha256: c425e2ed8b07e53d989c6feea4c1dc8b27a2a2f802305db78cfc0ef86e33feca
+  sha256: 6ba88aa668e1a7b97ec202ea67e961a855d17dd1aa71e192c7069a641607d3e1
 
 build:
   number: 0
@@ -18,16 +18,21 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - flit-core
-  run:
-    - dufte >=0.2.20
-    - importlib-metadata
     - matplotlib-base
-    - numpy
-    - python >=3.6
+    - matplotx
+    - numpy >=1.20
+    - python
     - rich
-    - matplotx >=0.2.8
+    - typing_extensions
+  run:
+    - matplotlib-base
+    - matplotx
+    - numpy >=1.20
+    - python >=3.7
+    - rich
+    - typing_extensions
 
 test:
   imports:
