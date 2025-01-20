@@ -7,30 +7,30 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/perfplot-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/perfplot-{{ version }}.tar.gz
   sha256: d76daa72334564b5c8825663f24d15db55ea33e938b34595a146e5e44ed87e41
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - flit-core
     - matplotlib-base
     - matplotx
     - numpy >=1.20
-    - python
+    - python {{ python_min }}
     - rich
     - typing_extensions
   run:
     - matplotlib-base
     - matplotx
     - numpy >=1.20
-    - python >=3.7
+    - python >={{ python_min }}
     - rich
     - typing_extensions
 
@@ -41,6 +41,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/nschloe/perfplot
